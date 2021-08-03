@@ -1,0 +1,15 @@
+/Users/fcojunior/Documents/workspace/personal/cache_db/bin/Debug/net5.0/cache_db.deps.json
+/Users/fcojunior/Documents/workspace/personal/cache_db/bin/Debug/net5.0/cache_db.runtimeconfig.json
+/Users/fcojunior/Documents/workspace/personal/cache_db/bin/Debug/net5.0/cache_db.runtimeconfig.dev.json
+/Users/fcojunior/Documents/workspace/personal/cache_db/bin/Debug/net5.0/cache_db.dll
+/Users/fcojunior/Documents/workspace/personal/cache_db/bin/Debug/net5.0/ref/cache_db.dll
+/Users/fcojunior/Documents/workspace/personal/cache_db/bin/Debug/net5.0/cache_db.pdb
+/Users/fcojunior/Documents/workspace/personal/cache_db/obj/Debug/net5.0/cache_db.csprojAssemblyReference.cache
+/Users/fcojunior/Documents/workspace/personal/cache_db/obj/Debug/net5.0/cache_db.GeneratedMSBuildEditorConfig.editorconfig
+/Users/fcojunior/Documents/workspace/personal/cache_db/obj/Debug/net5.0/cache_db.AssemblyInfoInputs.cache
+/Users/fcojunior/Documents/workspace/personal/cache_db/obj/Debug/net5.0/cache_db.AssemblyInfo.cs
+/Users/fcojunior/Documents/workspace/personal/cache_db/obj/Debug/net5.0/cache_db.csproj.CoreCompileInputs.cache
+/Users/fcojunior/Documents/workspace/personal/cache_db/obj/Debug/net5.0/cache_db.dll
+/Users/fcojunior/Documents/workspace/personal/cache_db/obj/Debug/net5.0/ref/cache_db.dll
+/Users/fcojunior/Documents/workspace/personal/cache_db/obj/Debug/net5.0/cache_db.pdb
+/Users/fcojunior/Documents/workspace/personal/cache_db/obj/Debug/net5.0/cache_db.genruntimeconfig.cache
