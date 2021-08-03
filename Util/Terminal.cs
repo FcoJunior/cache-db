@@ -8,7 +8,7 @@ namespace cache_db.Util
     {
         public Terminal(string consoleText) {
             this._commands = consoleText.Split(' ');
-            this.MapParrams();
+            this.MapParams();
         }
 
         private string[] _commands { get; set; }
@@ -17,14 +17,11 @@ namespace cache_db.Util
         public string Value { get; set; }
         public string Command { get; set; }
         
-        
-        
-        
         public string GetDataCommand() {
             return this._commands[0];
         }
 
-        public void MapParrams() {
+        public void MapParams() {
             DataCommand dataCommand;
             var hasCommand = Enum.TryParse(this._commands[0], true, out dataCommand);
             if (!hasCommand) {
