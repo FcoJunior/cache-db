@@ -7,7 +7,7 @@ namespace cache_db
     {
         static void Main(string[] args)
         {
-            new Startup().Execute();
+            Startup.Execute();
         }
     }
 }

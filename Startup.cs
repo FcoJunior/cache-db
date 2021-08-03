@@ -6,45 +6,48 @@ using cache_db.Util;
 namespace cache_db {
     public class Startup {
 
-        private readonly Actions _action;
+        private static Actions _action;
 
-        public Startup() {
+        private Startup() { }
+
+        private static void CreateActionInstance() {
             if (_action == null) {
                 _action = new Actions();
             }
         }
 
-        public void Execute() {
+        public static void Execute() {
             try {
                 var stdin = Console.ReadLine();
                 if (string.IsNullOrWhiteSpace(stdin)) {
-                    this.Execute();
+                    Execute();
                     return;
                 };
 
                 Terminal terminal = new Terminal(stdin);
 
+                CreateActionInstance();
                 switch (terminal.DataCommand) {
                     case DataCommand.SET: 
-                        this._action.Set(terminal.Key, terminal.Value);
+                        _action.Set(terminal.Key, terminal.Value);
                         break;
                     case DataCommand.GET:
-                        Console.WriteLine(this._action.Get(terminal.Key));
+                        Console.WriteLine(_action.Get(terminal.Key));
                         break;
                     case DataCommand.NUMEQUALTO:
-                        Console.WriteLine(this._action.EqualTo(terminal.Value));
+                        Console.WriteLine(_action.EqualTo(terminal.Value));
                         break;
                     case DataCommand.UNSET:
-                        this._action.Unset(terminal.Key);
+                        _action.Unset(terminal.Key);
                         break;
                     case DataCommand.BEGIN:
-                        this._action.Begin();
+                        _action.Begin();
                         break;
                     case DataCommand.ROLLBACK:
-                        this._action.RollBack();
+                        _action.RollBack();
                         break;
                     case DataCommand.COMMIT:
-                        this._action.Commit();
+                        _action.Commit();
                         break;
                     case DataCommand.END:
                         return;
@@ -53,10 +56,10 @@ namespace cache_db {
                         break;
                 }
 
-                this.Execute();
+                Execute();
             } catch(Exception ex) {
                 Console.WriteLine(ex.Message);
-                this.Execute();
+                Execute();
                 return;
             }
         }
